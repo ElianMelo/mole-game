@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+h1, login, span, a, p {
+    color: white;
+}
+
+h1, span {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+img {
+    width: 200px;
+    margin: auto;
+}
+
+input {
+    padding: 15px;
+}
+
+input[type="button"] {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    transition: 1s;
+}
+
+input[type="button"]:hover {
+    background-color: white;
+    color:  black;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    color: black;
+}
+
+#card {
+    gap: 10px;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+}

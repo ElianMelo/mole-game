@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jAlertWifi.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="js/jAlertWifi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/rank.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="shortcut icon" href="img/mole.png"/>
+</head>
+<body>
+    <header>
+        <span>Tempo: 00:<span id="chrono">00</span></span>
+        <span>Pontuação: <span id="score">0</span></span>
+    </header>
+    <main>
+        <section>
+            <div id="board"></div>
+        </section>
+    </main>
+    <footer>
+        <div id="infos">
+            <div id="levelBox">
+                <label for="level">Nível:</label>
+                <select name="level" id="level" onchange="fillBoard()">
+                    <option value="easy">Fácil</option>
+                    <option value="medium" selected>Médio</option>
+                    <option value="hard">Difícil</option>
+                </select>
+            </div>
+            
+            <span>Usuario: <span id="userName"></span></span>
+            <span>Melhor Pontuação: <span id="bestScore"></span></span>
+        </div>
+        <button id="btnPlay">Play</button>
+        <button id="btnPause" disabled>Pause</button>
+        <button id="btnStop" disabled>Stop</button>
+        <button id="btnExit">Exit</button>
+    </footer>
+</body>
+</html>
